@@ -1,0 +1,94 @@
+$units: 'px'
+
+@function rem($pxValue)
+	@if $units == 'rem'
+		@return calc($pxValue / 10) + rem
+
+	@else
+		@return calc($pxValue / 16) + rem
+
+/* mixin ============================================== */
+@import lib/base
+@import fonts
+/* mixin ============================================== */
+
+$font-family: 'Montserrat'
+$font2: 'Inter', sans-serif
+$color: #000
+$font-size: rem(14)
+$font-weight: 400
+$bgcolor: #fff
+// $color-danger: #D62E2E
+// $color-success: 
+// $color-warning: 
+// $color-default: 
+// $color-info: 
+
+$gutters: 15px
+$maxWidth: 192
+$container: 1260
+$desktop: 1500px
+$laptop: 1199px
+$ipad: 991px
+$iphone: 767px
+$iphone_sm: 575px
+$iphone_xs: 370px
+
+/* Normalize =========================================== */
+@import normalize
+
+@if $units == 'rem'
+	html
+		font-size: 62.5%
+@else
+	html
+		font-size: 100%
+
+html
+	&.lock, &.lock body
+		overflow: hidden
+	&.navLock, &.navLock body
+		overflow: hidden
+
+body
+	color: $color
+	font: $font-weight $font-size $font-family, Arial, sans-serif
+	line-height: 1.4
+	background: $bgcolor
+	min-height: 100%
+	display: flex
+	margin: 0px
+	padding: 0px
+	position: relative
+	-webkit-font-smoothing: antialiased
+	-moz-osx-font-smoothing: grayscale
+
+@import blocks/utilities
+
+@import blocks/components
+
+@import blocks/buttons
+
+@import blocks/forms
+
+@import blocks/icons
+
+/* HEADER
+/* ================================================ */
+@import header
+
+/* MAIN
+/* ================================================ */
+@import main
+
+@import blocks/popup
+
+@import blocks/gallery
+
+@import blocks/layout
+
+// @import blocks/tooltip 
+
+/* FOOTER
+/* ================================================ */
+@import footer

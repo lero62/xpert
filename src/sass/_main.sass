@@ -1,0 +1,364 @@
+.main-wrapper
+	padding: 0
+	min-width: rem(320)
+	position: relative
+	overflow: hidden
+	opacity: 1
+	z-index: 2
+	flex: 1 1 auto
+	display: flex
+	flex-flow: column nowrap
+	min-height: 100vh
+	width: 100%
+
+.main
+	width: 100%
+	min-width: rem(320)
+	text-align: left
+	flex: 1 1 auto
+
++min($laptop + 1)
+	.container-lg
+		max-width: 1206px !important
+
+/* Promo */
+/* --------------------------------------------------------------- */
+.promo-wrapper
+	display: flex
+	flex-direction: column
+	&__swiper
+		flex: 1 1 auto
+		width: 100%
+
+		.swiper-slide
+			display: flex
+			align-items: center
+			padding: 8vh 0 13vh
+			text-align: center
+			color: #fff
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+
+		&:after
+			content: ''
+			position: absolute
+			bottom: -15px
+			left: 0
+			z-index: 2
+			width: 100%
+			height: 10vh
+			background: url('../img/contacts-wrapper-path.png') no-repeat top center
+			background-size: cover
+
+	&__wrap
+		max-width: 770px
+		margin-left: auto
+		margin-right: auto
+	&__logo
+		margin-left: auto
+		margin-right: auto
+		width: 298px
+
+	&__subtitle
+		font-size: 32px
+		font-weight: 600
+
+	&__title
+		font-size: 48px
+		font-weight: 700
+
+	&__button
+		.l-btn
+			min-width: 200px
+
+	.swiper-pagination
+		bottom: 0 !important
+
+.pw-badge
+	min-width: 154px
+	height: 154px
+	line-height: 154px
+	white-space: nowrap
+	text-align: center
+	display: inline-block
+	vertical-align: middle
+	background: #FFC700
+	border-radius: 154px
+	padding: 0 5px
+	margin: 10px -80px 10px 0
+	color: $color
+	top: -3px
+	position: relative
+
+.contacts-wrapper
+	flex: none
+	width: 100%
+	padding: 4.5vh 0
+	position: relative
+	z-index: 2
+
+.contact-item
+	text-decoration: none
+	color: #000
+
+	&__icon
+		border: 2px solid #000000
+		width: 48px
+		height: 48px
+		flex: none
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		.icon
+			font-size: 25px
+			color: #000
+
+	&__text
+		font-size: 20px
+		font-weight: 600
+		font-family: $font2
+
+	@media (any-hover: hover)
+		&:hover
+			color: #2D50FE
+			.contact-item__icon
+				background: #2D50FE
+				border-color: #2D50FE
+				.icon
+					color: #fff
+
+/* Login */
+/* --------------------------------------------------------------- */
+.lang
+	&__button
+		border: 1px solid #A2C5CA
+		border-radius: 5px
+		height: 35px
+		line-height: 35px
+		white-space: nowrap
+		padding: 0 20px
+		background: transparent
+		text-transform: uppercase
+		font-size: 14px
+		font-weight: 700
+		&:after
+			background: url('../img/caret.svg') no-repeat center
+			width: 8px
+			height: 8px
+			border: none !important
+			vertical-align: middle !important
+			display: inline-block
+			top: -2px
+			position: relative
+.login-wrapper
+	display: flex
+	flex-direction: column
+	text-align: center
+	&__content
+		flex: 1 1 auto
+		display: flex
+		flex-direction: column
+	&__top
+		flex: none
+		background: #F0F5F6
+		position: relative
+		z-index: 1
+		&:after
+			content: ''
+			position: absolute
+			top: 100%
+			margin-top: -70px
+			left: 0
+			z-index: -1
+			width: 100%
+			height: 146px
+			background: url('../img/login-wrapper-path.png') no-repeat top center
+			background-size: cover
+
+	&__lang
+		margin-bottom: 10vh
+		margin-top: 15px
+
+	&__logo
+		img
+			margin-left: auto
+			margin-right: auto
+
+	&__form
+		flex: 1 1 auto
+		padding-top: 120px
+
+.lw
+	max-width: 351px
+	width: 100%
+	margin-left: auto
+	margin-right: auto
+
+.lw-tab
+	display: flex
+	margin-left: -1px
+	margin-right: -1px
+	&__link
+		flex: 1
+		margin-right: 1px
+		margin-left: 1px
+		text-align: left
+		padding-right: 10px
+		font-size: 16px
+		font-weight: 600
+		border-bottom: 5px solid #E2ECEE
+		cursor: pointer
+		&.active
+			border-color: #2D50FE
+
+.forgot
+	font-size: 13px
+	font-weight: 500
+	text-decoration: none
+	color: $color
+	&:hover
+		text-decoration: underline
+
+/* Media */
+/* --------------------------------------------------------------- */
+
+@media screen and (min-width: $ipad + 1) and (max-height: 800px), (max-width: $ipad)
+	.promo-wrapper
+		&__swiper
+			&:after
+				height: 13vh
+			.swiper-slide
+				padding-top: 6vh
+		&__logo
+			img
+				max-height: 50px
+				margin-left: auto
+				margin-right: auto
+		&__wrap
+			max-width: 560px
+		&__subtitle
+			font-size: 28px
+		&__title
+			font-size: 40px
+		&__button
+			.l-btn
+				height: 50px
+				font-size: 16px
+				min-width: 160px
+				&:after
+					border-width: 25px 0 25px 20px
+
+	.pw-badge
+		height: 120px
+		min-width: 120px
+		line-height: 120px
+		border-radius: 120px
+		margin-right: -60px
+
+	.contact-item
+		&__icon
+			width: 30px
+			height: 30px
+			border-width: 1px
+			.icon
+				font-size: 18px
+		&__text
+			font-size: 16px
+
+	.contacts-wrapper
+		padding: 20px 0
+
+	.login-wrapper__logo img
+		max-height: 50px
+
+	.login-wrapper__top:after
+		height: 100px
+		margin-top: -40px
+
+	.login-wrapper__form
+		padding-top: 90px
+
+@media screen and (max-height: 550px)
+	.promo-wrapper
+		&__swiper
+			&:after
+				height: 80px
+			.swiper-slide
+				padding-top: 40px
+				padding-bottom: 100px
+
+	.login-wrapper__lang
+		margin-bottom: 30px
+
+/* Desktop =========================*/
++min($desktop + 1)
+	.visible-desktop
+		display: none !important
++max($desktop)
+	.hidden-desktop
+		display: none !important
+
+/* Laptop =========================*/
++min($laptop + 1)
+	.visible-laptop
+		display: none !important
++max($laptop)
+	.hidden-laptop
+		display: none !important
+
+/* Ipad ===========================*/
++min($ipad + 1)
+	.visible-ipad
+		display: none !important
++max($ipad)
+	.hidden-ipad
+		display: none !important
+
+/* Mobile =========================*/
++min($iphone + 1)
+	.visible-iphone
+		display: none !important
++max($iphone)
+	.hidden-iphone
+		display: none !important
+
+	.promo-wrapper
+		&__logo
+			img
+				max-height: 40px
+		&__subtitle
+			+media-font(28, 16, 767, 1)
+		&__title
+			+media-font(40, 22, 767, 1)
+	.contact-item
+		&__text
+			font-size: 14px
+
+	.pw-badge
+		height: 70px
+		min-width: 70px
+		line-height: 70px
+		border-radius: 70px
+		margin-right: -30px
+		font-size: 22px
+
+	.login-wrapper__logo img
+		max-height: 40px
+
+/* Mobile sm ======================*/
++min($iphone_sm + 1)
+	.visible-iphone-sm
+		display: none !important
++max($iphone_sm)
+	.hidden-iphone-sm
+		display: none !important
+
+/* Mobile xs ======================*/
++min($iphone_xs + 1)
+	.visible-iphone-xs
+		display: none !important
++max($iphone_xs)
+	.hidden-iphone-xs
+		display: none !important

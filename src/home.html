@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/_head.html', {
+"title": "Home"
+})
+
+<body class="page-home">
+	<!-- BEGIN main wrapper -->
+	<div class="main-wrapper">
+
+
+
+		<!-- BEGIN MAIN -->
+		<main class="main promo-wrapper">
+			<div class="swiper promo-wrapper__swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image: url('img/promo-img-1.jpg');">
+						<div class="promo-wrapper__container container-lg">
+							<div class="promo-wrapper__wrap">
+								<div class="promo-wrapper__logo logo mb-4">
+									<img src="img/logo.png" alt="">
+								</div>
+
+								<h2 class="promo-wrapper__subtitle">Ваш груз имеет значение</h2>
+								<h1 class="promo-wrapper__title ttu"> протестируйте сервис прямо сейчас</h1>
+
+								<div class="promo-wrapper__button mt-md-5 mt-4">
+									<a href="#" class="l-btn l-btn--lg">
+										вход
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide" style="background-image: url('img/promo-img-2.jpg');">
+						<div class="promo-wrapper__container container-lg">
+							<div class="promo-wrapper__wrap">
+								<div class="promo-wrapper__logo logo mb-2">
+									<img src="img/logo.png" alt="">
+								</div>
+
+								<h1 class="promo-wrapper__title">Найдем и выкупим
+									любой товар на китайских сайтах <br>
+									<span class="ttu">за 24 часа</span> <br><span class="nowrap">
+										с комиссией
+										<span class="pw-badge">от 3%</span>
+									</span>
+								</h1>
+
+								<div class="promo-wrapper__button ">
+									<a href="#" class="l-btn l-btn--lg">
+										вход
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper-slide" style="background-image: url('img/promo-img-3.jpg');">
+						<div class="promo-wrapper__container container-lg">
+							<div class="promo-wrapper__wrap">
+								<div class="promo-wrapper__logo logo mb-4">
+									<img src="img/logo.png" alt="">
+								</div>
+
+								<h1 class="promo-wrapper__title ttu"> нет ограничений
+									по сумме при первом заказе</h1>
+
+								<div class="promo-wrapper__button mt-md-5 mt-4">
+									<a href="#" class="l-btn l-btn--lg">
+										вход
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="contacts-wrapper">
+				<div class="container-lg">
+					<div class="d-flex align-items-center justify-content-center flex-wrap">
+						<a href="#" class="contact-item d-flex align-items-center my-1 mx-md-4 mx-2">
+							<div class="contact-item__icon  me-md-3 me-2">
+								<svg class="icon icon-tel">
+									<use xlink:href="img/sprite.svg#tel"></use>
+								</svg>
+							</div>
+							<div class="contact-item__text">+7 909 443 39 39</div>
+						</a>
+
+						<a href="#" class="contact-item d-flex align-items-center my-1 mx-md-4 mx-2">
+							<div class="contact-item__icon  me-md-3 me-2">
+								<svg class="icon icon-email">
+									<use xlink:href="img/sprite.svg#email"></use>
+								</svg>
+							</div>
+							<div class="contact-item__text">info@info.ru</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+	</div>
+	<!-- main wrapper EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

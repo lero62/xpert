@@ -1,0 +1,61 @@
+.l-btn, a.l-btn
+	position: relative
+	z-index: 1
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	vertical-align: middle
+	height: 44px
+	padding: 0 10px 0 15px
+	color: #fff
+	font: 700 14px/14px $font-family, Arial, sans-serif
+	text-align: center
+	text-decoration: none
+	background: linear-gradient(to right, #2D50FE -1.56%, #8E42EE 99.91%)
+	text-transform: uppercase
+	border-radius: 5px
+	border: none
+	min-width: 150px
+	cursor: pointer
+	transition: all 0.2s linear
+
+	&:after
+		content: ''
+		position: absolute
+		right: -18px
+		top: 0
+		z-index: -1
+		+arr(20px, 44px, #8E42EE, r)
+		border-radius: 5px
+	@media (any-hover: hover)
+		&:hover
+			background: linear-gradient(to left, #2D50FE -1.56%, #8E42EE 99.91%)
+			&:after
+				border-left-color: #2D50FE
+	&--lg
+		height: 70px
+		font-size: 20px
+		padding: 0 20px 0 30px
+		&:after
+			border-width: 35px 0 35px 20px
+
+	&--md
+		height: 54px
+		font-size: 20px
+		padding: 0 20px 0 30px
+		&:after
+			border-width: 27px 0 27px 20px
+
+	&--block
+		display: flex
+		width: 100%
+		min-width: none
+		padding-left: rem(10)
+		padding-right: rem(10)
+
+input.l-btn,
+button.l-btn
+	display: inline-block
+	&--block
+		display: block
+		width: 100%

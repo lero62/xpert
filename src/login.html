@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@@include('./template/_head.html', {
+"title": "Home"
+})
+
+<body class="page-home">
+	<!-- BEGIN main wrapper -->
+	<div class="main-wrapper">
+
+
+
+		<!-- BEGIN MAIN -->
+		<main class="main login-wrapper">
+			<div class="login-wrapper__content">
+				<div class="login-wrapper__top">
+					<div class="container-lg">
+						<div class="login-wrapper__lang">
+							<div class="lang dropdown">
+								<button class="lang__button dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+									ru
+								</button>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="#">EN</a></li>
+									<li><a class="dropdown-item" href="#">UA</a></li>
+								</ul>
+							</div>
+						</div>
+						<div class="login-wrapper__logo logo">
+							<img src="img/logo-dark.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="login-wrapper__form">
+					<div class="container-lg">
+						<div class="lw text-start">
+							<div class="nav lw-tab mb-4" role="tablist">
+								<div class="lw-tab__link active" data-bs-toggle="tab" data-bs-target="#tab-login">Вход</div>
+								<div class="lw-tab__link" data-bs-toggle="tab" data-bs-target="#tab-reg">Регистрация </div>
+							</div>
+
+							<div class="tab-content">
+								<div class="tab-pane fade show active" id="tab-login">
+									<form action="#">
+										<div class="mb-3">
+											<label class="l-label">E-mail</label>
+											<input type="text" class="form-input form-control">
+										</div>
+										<div class="mb-2">
+											<label class="l-label">Пароль</label>
+											<input type="password" class="form-input form-control">
+										</div>
+
+										<a href="#" class="forgot">Забыли пароль?</a>
+
+										<div class="mt-4 text-center">
+											<button class="l-btn l-btn--md" type="submit">вход</button>
+										</div>
+									</form>
+								</div>
+								<div class="tab-pane fade" id="tab-reg">
+									<form action="#">
+										<div class="mb-3">
+											<label class="l-label">E-mail</label>
+											<input type="text" class="form-input form-control">
+										</div>
+										<div class="mb-3">
+											<label class="l-label">Name</label>
+											<input type="text" class="form-input form-control">
+										</div>
+										<div class="mb-2">
+											<label class="l-label">Пароль</label>
+											<input type="password" class="form-input form-control">
+										</div>
+										<div class="mb-2">
+											<label class="l-label">Повторите Пароль</label>
+											<input type="password" class="form-input form-control">
+										</div>
+
+										<a href="#" class="forgot">Уже зарегистрированы?</a>
+
+										<div class="mt-4 text-center">
+											<button class="l-btn l-btn--md" type="submit">вход</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contacts-wrapper">
+				<div class="container-lg">
+					<div class="d-flex align-items-center justify-content-center flex-wrap">
+						<a href="#" class="contact-item d-flex align-items-center my-1 mx-md-4 mx-2">
+							<div class="contact-item__icon  me-md-3 me-2">
+								<svg class="icon icon-tel">
+									<use xlink:href="img/sprite.svg#tel"></use>
+								</svg>
+							</div>
+							<div class="contact-item__text">+7 909 443 39 39</div>
+						</a>
+
+						<a href="#" class="contact-item d-flex align-items-center my-1 mx-md-4 mx-2">
+							<div class="contact-item__icon  me-md-3 me-2">
+								<svg class="icon icon-email">
+									<use xlink:href="img/sprite.svg#email"></use>
+								</svg>
+							</div>
+							<div class="contact-item__text">info@info.ru</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</main>
+		<!-- MAIN EOF   -->
+
+
+	</div>
+	<!-- main wrapper EOF   -->
+
+	@@include('./template/_js.html', {})
+
+</body>
+
+</html>

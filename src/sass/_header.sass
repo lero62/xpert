@@ -1,0 +1,124 @@
+.header
+	width: 100%
+	min-width: rem(320)
+	text-align: left
+	flex-shrink: 0
+
+/* begin Mobile Menu */
+
+.offcanvas
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.8)
+	top: 0
+	left: 0
+	opacity: 0
+	visibility: hidden
+	overflow: hidden
+	z-index: 1040
+	transition: visibility 0.2s ease-in-out, opacity 0.2s ease-in-out
+	pointer-events: none
+	&__overlay
+		width: 100%
+		height: 100%
+		transition: all 0.1s ease-in-out
+
+	&__content
+		height: 100%
+		background-color: #fff
+		color: #000
+		width: 100%
+		max-width: rem(400)
+		opacity: 0
+		display: flex
+		flex-direction: column
+		transition: all 0.3s ease-in-out
+		transform: translate(-100%,0)
+	&__header
+		display: flex
+		align-items: center
+		justify-content: space-between
+		padding: rem(10) rem(20)
+	&__close
+
+		font-size: rem(20)
+		color: #000
+		cursor: pointer
+		display: flex
+		align-items: center
+		justify-content: center
+		width: rem(30)
+		height: rem(30)
+		.icon
+			font-size: rem(20)
+			color: $color
+
+	&__body
+		flex-grow: 1
+		overflow-y: auto
+		padding: rem(10) rem(20)
+
+	&._open
+		opacity: 1
+		visibility: visible
+		pointer-events: auto
+		.offcanvas__content
+			transform: translate(0,0)
+			opacity: 1
+
+/*  Burger button */
+.burger
+	height: rem(44)
+	width: rem(44)
+	cursor: pointer
+
+	position: relative
+	display: block
+	background: #e22425
+	border-radius: rem(10)
+
+	&__icon
+		height: rem(3)
+		width: rem(25)
+		position: absolute
+		top: 50%
+		left: 50%
+		border-radius: rem(25)
+		background-color: #fff
+		transform: translate(-50%,-50%) rotate(0deg)
+		transition: all ease 0.5s
+		&:before,&:after
+			content: ""
+			position: absolute
+			height: inherit
+			border-radius: rem(5)
+			background-color: #fff
+			margin: auto
+			width: 100%
+			transition: all ease 0.5s
+
+		&:before
+			top: rem(-8)
+			left: 0
+			transform-origin: left
+
+		&:after
+			bottom: rem(-8)
+			right: 0
+			transform-origin: right
+
+	&._active .burger__icon
+		transform: translate(-50%,-50%) rotate(135deg)
+		&:before
+			top: 0
+			width: 50%
+			transform: translateX(100%) rotate(-90deg)
+
+		&:after
+			bottom: 0
+			width: 50%
+			transform: translateX(-100%) rotate(-90deg)
+
+	+min($ipad + 1)
+		display: none
