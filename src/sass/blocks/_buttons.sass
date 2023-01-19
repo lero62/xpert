@@ -32,6 +32,28 @@
 			background: linear-gradient(to left, #2D50FE -1.56%, #8E42EE 99.91%)
 			&:after
 				border-left-color: #2D50FE
+
+	&--info
+		background: #2D50FE
+		&:after
+			display: none
+
+		@media (any-hover: hover)
+			&:hover
+				background: lighten(#2D50FE, 5%)
+
+	&--default
+		background: #E1E1E1
+		color: $color
+		font-size: 12px
+		font-weight: 600
+		&:after
+			display: none
+
+		@media (any-hover: hover)
+			&:hover
+				background: darken(#E1E1E1, 5%)
+
 	&--lg
 		height: 70px
 		font-size: 20px

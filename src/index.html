@@ -18,8 +18,170 @@
 
 		<!-- BEGIN MAIN -->
 		<main class="main">
-			<div class="container">
+			<div class="container-lg">
+				<div class="wrap d-flex">
+					<div class="wrap__side side">
+						<ul class="side-nav">
+							<li class="side-nav__item">
+								<a href="#" class="side-nav__link _active">Заказать поиск</a>
+							</li>
+							<li class="side-nav__item">
+								<a href="#" class="side-nav__link">Заказать выкуп</a>
+							</li>
+							<li class="side-nav__item">
+								<a href="#" class="side-nav__link">Оплатить поставщику</a>
+							</li>
+							<li class="side-nav__item">
+								<a href="#" class="side-nav__link">Кошелек</a>
+							</li>
+							<li class="side-nav__item">
+								<a href="#" class="side-nav__link">Мои грузы</a>
+							</li>
+							<li class="side-nav__item">
+								<a href="#" class="side-nav__link">Сообщения</a>
+							</li>
+							<li class="side-nav__item">
+								<a href="#" class="side-nav__link">Моя информация</a>
+							</li>
+							<li class="side-nav__item">
+								<a href="#" class="side-nav__link">Faq</a>
+							</li>
+						</ul>
 
+						<div class="side__service service mt-4 ">
+							<div class="service__title text-center mb-3">Услуга “выкуп товара с китайских сайтов”</div>
+							<div class="service__list text-end">
+								<div class="service__list-item">
+									До 100 000 ¥ ..... 10%
+								</div>
+								<div class="service__list-item">
+									100 000 ¥ - 300 000¥ ..... 8%
+								</div>
+								<div class="service__list-item">
+									300 000¥ - 500 000¥ ..... 5%
+								</div>
+								<div class="service__list-item">
+									500 000¥ - 800 000¥ ..... 4%
+								</div>
+								<div class="service__list-item">
+									800 000¥ - 1 млн.¥ ..... 3%
+								</div>
+								<div class="service__list-item">
+									1,5 ¥- 2 млн.¥ ..... 2%
+								</div>
+								<div class="service__list-item">
+									от 3 млн.¥ ..... 1%
+								</div>
+							</div>
+
+						</div>
+					</div>
+					<div class="wrap__content content">
+						<div class="c-banner mb-4" style="background-image: url('img/banner.jpg');">
+							<div class="c-banner__title">баннер</div>
+						</div>
+
+						<div class="add-card">
+							<div class="add-card__head">
+								<div class="add-card__img">
+									<img src="img/box.svg" alt="">
+								</div>
+								<div class="add-card__title">Товар 1</div>
+							</div>
+							<div class="add-card__body">
+								<div class="add-card__form">
+									<div class="mb-3">
+										<label class="l-label">Ссылка на товар</label>
+										<input type="text" class="form-input form-control">
+									</div>
+
+									<div class="mb-1">
+										<label class="l-label">Загрузите фотографию с наименованиями товара</label>
+										<div class="d-flex flex-wrap">
+											<label class="upload me-3 mb-3">
+												<input type="file">
+												<span class="upload__icon">
+													<svg class="icon icon-foto">
+														<use xlink:href="img/sprite.svg#foto"></use>
+													</svg>
+												</span>
+											</label>
+											<label class="upload me-3 mb-3">
+												<input type="file">
+												<span class="upload__icon">
+													<svg class="icon icon-foto">
+														<use xlink:href="img/sprite.svg#foto"></use>
+													</svg>
+												</span>
+											</label>
+											<label class="upload me-3 mb-3">
+												<input type="file">
+												<span class="upload__icon">
+													<svg class="icon icon-foto">
+														<use xlink:href="img/sprite.svg#foto"></use>
+													</svg>
+												</span>
+											</label>
+											<label class="upload me-3 mb-3">
+												<input type="file">
+												<span class="upload__icon">
+													<svg class="icon icon-foto">
+														<use xlink:href="img/sprite.svg#foto"></use>
+													</svg>
+												</span>
+											</label>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<label class="l-label">Или добавьте ссылку скриншота с наименованиями товара</label>
+										<input type="text" class="form-input form-control">
+									</div>
+
+									<div class="mb-3">
+										<label class="l-label">Укажите суммарную стоимость товарных позиций по данной ссылке</label>
+										<div class="form-group">
+											<input type="text" class="form-input form-control">
+											<button class="l-btn l-btn--info" type="button">¥, юаней</button>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<label class="l-label">Дополнительные услуги:</label>
+										<div class="form-check checkbox">
+											<input class="form-check-input " type="checkbox" value="" id="videoCheck">
+											<label class="form-check-label" for="videoCheck">
+												Видео проверка
+											</label>
+										</div>
+										<div class="form-check checkbox">
+											<input class="form-check-input " type="checkbox" value="" id="checkMarriage">
+											<label class="form-check-label" for="checkMarriage">
+												Проверка на брак
+											</label>
+										</div>
+										<div class="form-check checkbox">
+											<input class="form-check-input " type="checkbox" value="" id="checkFoto">
+											<label class="form-check-label" for="checkFoto">
+												Отдельное фото товара
+											</label>
+										</div>
+									</div>
+
+									<div class="mb-3">
+										<label class="l-label">Или добавьте ссылку скриншота с наименованиями товара</label>
+										<textarea class="form-control form-input" rows="4"></textarea>
+									</div>
+
+
+									<button class="l-btn l-btn--default mb-2" type="button">Добавить товар к этому заказу</button>
+									<button class="l-btn" type="button">создать новый заказ на выкуп</button>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</main>
 		<!-- MAIN EOF   -->
@@ -32,8 +194,8 @@
 	<!-- main wrapper EOF   -->
 
 	<!-- BEGIN POPUPS -->
-	@@include('./template/popups/callback.html')
-	@@include('./template/popups/navbar.html')
+	<!-- @@include('./template/popups/callback.html')
+	@@include('./template/popups/navbar.html') -->
 	<!-- POPUPS EOF   -->
 
 	@@include('./template/_js.html', {})

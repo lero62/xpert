@@ -1,0 +1,131 @@
+.wrap
+	&__side
+		flex: none
+		width: 348px
+
+	&__content
+		flex: 1
+		min-width: 1px
+		background: #fff
+		position: relative
+		&:after
+			content: ''
+			background: inherit
+			position: absolute
+			height: 100%
+			left: 100%
+			top: 0
+			width: 100vw
+
+.content
+	padding: 30px 0 30px 30px
+
+.side
+	&__service
+		max-width: 251px
+		margin-left: auto
+		margin-right: auto
+
+.side-nav
+	list-style-type: none
+	margin: 0
+	padding: 0
+	&__item
+		border-bottom: 1px solid rgba(#A2C5CA, 0.2)
+	&__link
+		display: block
+		padding: 15px 45px 15px 51px
+		text-decoration: none
+		font-size: 12px
+		font-weight: 600
+		text-transform: uppercase
+		color: $color
+		position: relative
+		&:after
+			content: ''
+
+			position: absolute
+			top: 50%
+			right: 25px
+			margin-top: -6px
+			width: 12px
+			height: 12px
+			background: url('../img/side-menu-caret.svg') no-repeat center
+			display: none
+
+		&:hover
+			color: rgba(#002BFF, 0.7)
+
+		&._active
+			color: #002BFF
+			&:after
+				display: block
+
+.service
+	background: linear-gradient(102.96deg, #2D50FE 40.57%, #AF2DFE 100%)
+	border-radius: 5px
+	padding: 15px
+	color: #fff
+
+	&__title
+		font-size: 16px
+		font-weight: 600
+
+	&__list
+		&-item
+			font-size: 13px
+			font-weight: 700
+			margin-bottom: 5px
+			&:last-child
+				margin-bottom: 0
+
+.c-banner
+	position: relative
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	height: 160px
+	border-radius: 5px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	padding: 30px
+
+	&__title
+		color: #fff
+		font-size: 20px
+		font-weight: 700
+		text-transform: uppercase
+
+.add-card
+	margin-left: 100px
+	&__head
+		position: relative
+		padding-left: 80px
+		border-bottom: 1px solid #D3D3D3
+		padding-bottom: 8px
+	&__img
+		position: absolute
+		bottom: -25px
+
+		left: 0
+		width: 54px
+		height: 54px
+		border: 1px solid #DADADA
+		border-radius: 50%
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #fff
+	&__title
+		font-size: 14px
+		font-weight: 600
+		text-transform: uppercase
+
+	&__body
+		padding-left: 80px
+
+		padding-top: 20px
+
+	&__form
+		max-width: 520px

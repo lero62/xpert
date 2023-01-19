@@ -1,9 +1,67 @@
 <header class="header">
-	<div class="container ">
-		<a href="#" class="header__logo logo"><img src="img/logo.png" alt=""></a>
-		<a href="#offcanvas-navbar" class="header__burger burger _open-modal">
-			<div class="burger__icon"></div>
-		</a>
+	<div class="header__container container-lg d-flex align-items-center">
+
+		<a href="#" class="header__logo logo me-2"><img src="img/logo.png" alt=""></a>
+		<div class="header__lang lang dropdown">
+			<button class="lang__button dropdown-toggle dropdown-toggle--white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+				ru
+			</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">EN</a></li>
+				<li><a class="dropdown-item" href="#">UA</a></li>
+			</ul>
+		</div>
+
+		<div class="header__nav">
+			<ul class="top-nav">
+				<li class="top-nav__money">
+					<div class="tn-money text-end dropdown me-3">
+						<div class="tn-money__text">Пополнить</div>
+						<div class="tn-money__value dropdown-toggle dropdown-toggle--white nowrap" data-bs-toggle="dropdown">
+							0,00 $
+
+							<ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="#">menu 1</a></li>
+								<li><a class="dropdown-item" href="#">menu 2</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+				<li class="top-nav__item">
+					<a href="#" class="top-nav__icon">
+						<svg class="icon icon-notification">
+							<use xlink:href="img/sprite.svg#notification"></use>
+						</svg>
+						<span class="l-badge"></span>
+					</a>
+				</li>
+				<li class="top-nav__item">
+					<a href="#" class="top-nav__icon">
+						<svg class="icon icon-basket">
+							<use xlink:href="img/sprite.svg#basket"></use>
+						</svg>
+						<span class="l-badge">1</span>
+					</a>
+				</li>
+				<li class="top-nav__user">
+					<div class="tn-user">
+						<div class="tn-user__img">
+							<img src="img/user.png" alt="">
+						</div>
+						<div class="tn-user__content dropdown">
+							<div class="tn-user__name dropdown-toggle dropdown-toggle--white" data-bs-toggle="dropdown">Ольга</div>
+							<div class="tn-user__id">ID:29229</div>
+
+							<ul class="dropdown-menu dropdown-menu-end">
+								<li><a class="dropdown-item" href="#">menu 1</a></li>
+								<li><a class="dropdown-item" href="#">menu 2</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
 
 	</div>
 </header>

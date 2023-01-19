@@ -17,7 +17,7 @@ $font2: 'Inter', sans-serif
 $color: #000
 $font-size: rem(14)
 $font-weight: 400
-$bgcolor: #fff
+$bgcolor: #F0F5F6
 // $color-danger: #D62E2E
 // $color-success: 
 // $color-warning: 
@@ -51,10 +51,10 @@ html
 		overflow: hidden
 
 body
-	color: $color
-	font: $font-weight $font-size $font-family, Arial, sans-serif
+	color: $color !important
+	font: $font-weight $font-size $font-family, Arial, sans-serif !important
 	line-height: 1.4
-	background: $bgcolor
+	background: $bgcolor !important
 	min-height: 100%
 	display: flex
 	margin: 0px
@@ -81,11 +81,13 @@ body
 /* ================================================ */
 @import main
 
-@import blocks/popup
+@import pages/cabinet
 
-@import blocks/gallery
+// @import blocks/popup
 
-@import blocks/layout
+// @import blocks/gallery
+
+// @import blocks/layout
 
 // @import blocks/tooltip 
 

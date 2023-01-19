@@ -1,52 +1,5 @@
 /* Elements ============ */
 
-/* Tabs */
-/* --------------------------------------------------------------- */
-.tab-block
-	&__nav
-		display: flex
-	&__navitem
-		margin-right: 1rem
-		cursor: pointer
-		&:last-child
-			margin-right: 0
-
-[data-tabs-button], [data-tabs-head]
-	&._active
-		color: red
-[data-tabs-block]
-	display: none
-	&._active
-		display: block
-
-/* Accoordion */
-/* --------------------------------------------------------------- */
-[data-spollers]._init
-	[data-spoller]
-		position: relative
-		padding: rem(10) rem(40) rem(10) 0
-		cursor: pointer
-		&:before, &:after
-			content: ''
-			width: rem(20)
-			height: rem(1)
-			background: $color
-			position: absolute
-			right: rem(10)
-			top: rem(20)
-			transition: transform 0.3s linear
-		&:after
-			transform: rotate(90deg)
-
-		&._active
-			&:after
-				transform: rotate(0)
-
-/* Toggle Block */
-/* --------------------------------------------------------------- */
-[data-toggle-item="hidden"]
-	display: none
-
 /* Crumbs */
 /* --------------------------------------------------------------- */
 
@@ -58,33 +11,23 @@
 		&:hover
 			text-decoration: none
 
-/* Text Collapse */
+/* Dropdown */
 /* --------------------------------------------------------------- */
-._text-collapse
-	.more-wrap
-		display: none
-	&._full
-		.more-wrap
-			display: block
 
-._text-collapse-block
-	overflow: hidden
-	position: relative
-
-	&._short
+.dropdown-toggle
+	cursor: pointer
+	&:after
+		background: url('../img/caret.svg') no-repeat center
+		width: 8px
+		height: 8px
+		border: none !important
+		vertical-align: middle !important
+		display: inline-block
+		top: -1px
+		position: relative
+	&--white
 		&:after
-			content: ''
-			position: absolute
-			bottom: 0
-			left: 0
-			height: rem(20)
-			width: 100%
-			right: 0
-			background: linear-gradient(to bottom, rgba(#fbfbfb, 0), rgba(#fbfbfb, 1) )
-	&._full
-		max-height: none
-		&:after
-			display: none
+			background-image: url('../img/caret-white.svg')
 
 /* Swiper */
 /* --------------------------------------------------------------- */
